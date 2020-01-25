@@ -1,18 +1,30 @@
 package vswe.stevesfactory.waila;
 
 
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import mcp.mobius.waila.api.*;
+import mcp.mobius.waila.api.IWailaConfigHandler;
+import mcp.mobius.waila.api.IWailaDataAccessor;
+import mcp.mobius.waila.api.IWailaDataProvider;
+import mcp.mobius.waila.api.IWailaRegistrar;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import vswe.stevesfactory.Localization;
-import vswe.stevesfactory.blocks.*;
-
-import java.util.List;
+import vswe.stevesfactory.blocks.BlockCableCamouflages;
+import vswe.stevesfactory.blocks.BlockCableCluster;
+import vswe.stevesfactory.blocks.BlockCableOutput;
+import vswe.stevesfactory.blocks.ClusterRegistry;
+import vswe.stevesfactory.blocks.TileEntityCamouflage;
+import vswe.stevesfactory.blocks.TileEntityCluster;
+import vswe.stevesfactory.blocks.TileEntityOutput;
 
 public class Provider implements IWailaDataProvider {
     @Override
@@ -97,6 +109,11 @@ public class Provider implements IWailaDataProvider {
         registrar.registerStackProvider(instance, BlockCableCluster.class);
         registrar.registerStackProvider(instance, BlockCableCamouflages.class);
     }
+
+	@Override
+	public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity te, NBTTagCompound tag, World world, int x, int y, int z) {
+		return tag;
+	}
 
 
 
