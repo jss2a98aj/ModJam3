@@ -1,6 +1,9 @@
 buildscript {
     repositories {
-        mavenCentral()
+        maven {//fix some of the 501 issues
+            name = "mavenCentral"
+            url = "https://repo1.maven.org/maven2/"
+        }
         maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
@@ -22,7 +25,7 @@ group= "vswe.stevesfactory" // http://maven.apache.org/guides/mini/guide-naming-
 archivesBaseName = "StevesFactoryManager"
 
 minecraft {
-    version = "1.7.10-10.13.0.1188"
+    version = "1.7.10-10.13.4.1614-1.7.10"
     assetDir = "eclipse/assets"
 }
 
