@@ -1,10 +1,10 @@
 package vswe.stevesfactory.blocks;
 
+import java.util.EnumSet;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-
-import java.util.EnumSet;
 
 
 public abstract class TileEntityClusterElement extends TileEntity {

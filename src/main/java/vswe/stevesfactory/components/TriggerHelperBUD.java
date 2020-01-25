@@ -1,10 +1,10 @@
 package vswe.stevesfactory.components;
 
-import vswe.stevesfactory.blocks.ConnectionBlockType;
-import vswe.stevesfactory.blocks.TileEntityBUD;
-
 import java.util.EnumSet;
 import java.util.List;
+
+import vswe.stevesfactory.blocks.ConnectionBlockType;
+import vswe.stevesfactory.blocks.TileEntityBUD;
 
 
 public class TriggerHelperBUD extends TriggerHelper {

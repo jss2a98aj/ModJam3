@@ -1,6 +1,8 @@
 package vswe.stevesfactory.blocks;
 
 
+import java.util.List;
+
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
@@ -9,8 +11,6 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import vswe.stevesfactory.Localization;
 import vswe.stevesfactory.StevesFactoryManager;
-
-import java.util.List;
 
 public class ItemCluster extends ItemBlock {
 

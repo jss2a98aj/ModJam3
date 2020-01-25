@@ -1,12 +1,12 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.EnumSet;
+import java.util.List;
+
 import net.minecraftforge.common.util.ForgeDirection;
 import vswe.stevesfactory.blocks.ConnectionBlockType;
 import vswe.stevesfactory.blocks.TileEntityInput;
-
-import java.util.EnumSet;
-import java.util.List;
 
 public class TriggerHelperRedstone extends TriggerHelper {
     private int strengthId;

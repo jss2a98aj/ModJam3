@@ -1,8 +1,8 @@
 package vswe.stevesfactory.components;
 
-import vswe.stevesfactory.Localization;
-
 import java.util.List;
+
+import vswe.stevesfactory.Localization;
 
 
 public class ComponentMenuCamouflageSides extends ComponentMenuRedstoneSides {

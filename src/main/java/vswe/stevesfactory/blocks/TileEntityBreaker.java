@@ -1,7 +1,13 @@
 package vswe.stevesfactory.blocks;
 
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.List;
+import java.util.UUID;
+
 import com.mojang.authlib.GameProfile;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -17,12 +23,11 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.WorldServer;
 import net.minecraftforge.common.util.FakePlayerFactory;
 import net.minecraftforge.common.util.ForgeDirection;
-import vswe.stevesfactory.network.*;
-
-import java.util.ArrayList;
-import java.util.EnumSet;
-import java.util.List;
-import java.util.UUID;
+import vswe.stevesfactory.network.DataBitHelper;
+import vswe.stevesfactory.network.DataReader;
+import vswe.stevesfactory.network.DataWriter;
+import vswe.stevesfactory.network.IPacketBlock;
+import vswe.stevesfactory.network.PacketHandler;
 
 public class TileEntityBreaker extends TileEntityClusterElement implements IInventory, IPacketBlock {
 

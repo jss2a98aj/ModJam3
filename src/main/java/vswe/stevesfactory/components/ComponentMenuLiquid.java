@@ -1,6 +1,10 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraftforge.fluids.Fluid;
@@ -10,10 +14,6 @@ import vswe.stevesfactory.interfaces.GuiManager;
 import vswe.stevesfactory.network.DataBitHelper;
 import vswe.stevesfactory.network.DataReader;
 import vswe.stevesfactory.network.DataWriter;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class ComponentMenuLiquid extends ComponentMenuStuff {
     public ComponentMenuLiquid(FlowComponent parent) {

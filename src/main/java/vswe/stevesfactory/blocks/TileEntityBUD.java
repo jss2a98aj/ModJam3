@@ -1,13 +1,13 @@
 package vswe.stevesfactory.blocks;
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.List;
+
 import net.minecraft.block.Block;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.common.util.ForgeDirection;
-
-import java.util.ArrayList;
-import java.util.EnumSet;
-import java.util.List;
 
 
 public class TileEntityBUD extends TileEntityClusterElement implements ISystemListener, ITriggerNode{

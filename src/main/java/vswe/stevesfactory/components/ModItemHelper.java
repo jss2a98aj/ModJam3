@@ -1,14 +1,13 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 import cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry;
 import cpw.mods.fml.common.registry.GameData;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
-
-
-import java.util.HashMap;
-import java.util.Map;
 
 public final class ModItemHelper {
 

@@ -1,10 +1,10 @@
 package vswe.stevesfactory.components;
 
 
-import net.minecraftforge.fluids.FluidStack;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import net.minecraftforge.fluids.FluidStack;
 
 public class LiquidBufferElement {
     private Setting setting;

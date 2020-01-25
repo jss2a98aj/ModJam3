@@ -1,6 +1,9 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -10,9 +13,6 @@ import vswe.stevesfactory.Localization;
 import vswe.stevesfactory.network.DataBitHelper;
 import vswe.stevesfactory.network.DataReader;
 import vswe.stevesfactory.network.DataWriter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ItemSetting extends Setting {
     private FuzzyMode fuzzyMode;

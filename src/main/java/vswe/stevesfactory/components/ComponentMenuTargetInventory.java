@@ -1,6 +1,8 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.nbt.NBTTagCompound;
@@ -10,8 +12,6 @@ import vswe.stevesfactory.interfaces.GuiManager;
 import vswe.stevesfactory.network.DataBitHelper;
 import vswe.stevesfactory.network.DataReader;
 import vswe.stevesfactory.network.DataWriter;
-
-import java.util.List;
 
 public class ComponentMenuTargetInventory extends ComponentMenuTarget {
     public ComponentMenuTargetInventory(FlowComponent parent) {

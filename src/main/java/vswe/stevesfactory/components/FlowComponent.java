@@ -1,21 +1,29 @@
 package vswe.stevesfactory.components;
 
+import java.lang.reflect.Constructor;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.lwjgl.opengl.GL11;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
-import org.lwjgl.opengl.GL11;
 import vswe.stevesfactory.CollisionHelper;
 import vswe.stevesfactory.blocks.TileEntityManager;
 import vswe.stevesfactory.interfaces.ContainerManager;
 import vswe.stevesfactory.interfaces.GuiManager;
-import vswe.stevesfactory.network.*;
+import vswe.stevesfactory.network.DataBitHelper;
+import vswe.stevesfactory.network.DataReader;
+import vswe.stevesfactory.network.DataWriter;
+import vswe.stevesfactory.network.IComponentNetworkReader;
+import vswe.stevesfactory.network.PacketHandler;
 import vswe.stevesfactory.settings.Settings;
-
-import java.lang.reflect.Constructor;
-import java.util.*;
 
 public class FlowComponent implements IComponentNetworkReader, Comparable<FlowComponent> {
     private static final int COMPONENT_SRC_X = 0;

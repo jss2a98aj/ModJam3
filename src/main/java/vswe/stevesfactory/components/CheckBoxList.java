@@ -1,13 +1,13 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import vswe.stevesfactory.CollisionHelper;
 import vswe.stevesfactory.interfaces.GuiManager;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CheckBoxList {
     public static final int CHECK_BOX_SIZE = 8;

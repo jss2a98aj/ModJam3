@@ -1,11 +1,18 @@
 package vswe.stevesfactory.animation;
 
 
-import com.sun.swing.internal.plaf.metal.resources.metal_it;
-import vswe.stevesfactory.blocks.TileEntityManager;
-import vswe.stevesfactory.components.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
+import vswe.stevesfactory.blocks.TileEntityManager;
+import vswe.stevesfactory.components.ComponentMenu;
+import vswe.stevesfactory.components.ComponentType;
+import vswe.stevesfactory.components.Connection;
+import vswe.stevesfactory.components.FlowComponent;
+import vswe.stevesfactory.components.Point;
 
 public class AnimationController {
 

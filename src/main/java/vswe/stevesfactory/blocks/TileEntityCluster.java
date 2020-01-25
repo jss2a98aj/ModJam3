@@ -1,6 +1,11 @@
 package vswe.stevesfactory.blocks;
 
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -15,12 +20,11 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
-import vswe.stevesfactory.network.*;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import vswe.stevesfactory.network.DataBitHelper;
+import vswe.stevesfactory.network.DataReader;
+import vswe.stevesfactory.network.DataWriter;
+import vswe.stevesfactory.network.IPacketBlock;
+import vswe.stevesfactory.network.PacketHandler;
 
 public class TileEntityCluster extends TileEntity implements ITileEntityInterface, IPacketBlock {
 

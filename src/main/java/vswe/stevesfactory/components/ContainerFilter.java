@@ -1,13 +1,13 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import vswe.stevesfactory.Localization;
 import vswe.stevesfactory.blocks.ConnectionBlock;
 import vswe.stevesfactory.blocks.TileEntityManager;
 import vswe.stevesfactory.interfaces.GuiManager;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ContainerFilter {
 

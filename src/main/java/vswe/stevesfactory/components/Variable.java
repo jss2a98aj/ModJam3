@@ -2,13 +2,14 @@ package vswe.stevesfactory.components;
 
 
 
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import org.lwjgl.opengl.GL11;
-import vswe.stevesfactory.interfaces.GuiManager;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import org.lwjgl.opengl.GL11;
+
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import vswe.stevesfactory.interfaces.GuiManager;
 
 public class Variable implements IContainerSelection {
     private int id;

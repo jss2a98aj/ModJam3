@@ -1,5 +1,8 @@
 package vswe.stevesfactory.interfaces;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ICrafting;
@@ -9,9 +12,6 @@ import vswe.stevesfactory.blocks.TileEntityManager;
 import vswe.stevesfactory.blocks.WorldCoordinate;
 import vswe.stevesfactory.components.FlowComponent;
 import vswe.stevesfactory.network.PacketHandler;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ContainerManager extends ContainerBase {

@@ -1,10 +1,10 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.List;
+
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
-
-import java.util.List;
 
 public class OutputItemCounter {
     private Setting setting;

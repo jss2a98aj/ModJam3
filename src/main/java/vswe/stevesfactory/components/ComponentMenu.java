@@ -1,6 +1,8 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.nbt.NBTTagCompound;
@@ -10,8 +12,6 @@ import vswe.stevesfactory.network.DataReader;
 import vswe.stevesfactory.network.DataWriter;
 import vswe.stevesfactory.network.IComponentNetworkReader;
 import vswe.stevesfactory.network.PacketHandler;
-
-import java.util.List;
 
 public abstract class ComponentMenu implements IComponentNetworkReader {
 

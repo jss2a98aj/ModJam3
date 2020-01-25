@@ -1,5 +1,8 @@
 package vswe.stevesfactory.blocks;
 
+import java.util.EnumSet;
+import java.util.Random;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -16,10 +19,11 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.util.ForgeDirection;
 import vswe.stevesfactory.components.ComponentMenuCamouflageInside;
 import vswe.stevesfactory.components.ComponentMenuCamouflageShape;
-import vswe.stevesfactory.network.*;
-
-import java.util.EnumSet;
-import java.util.Random;
+import vswe.stevesfactory.network.DataBitHelper;
+import vswe.stevesfactory.network.DataReader;
+import vswe.stevesfactory.network.DataWriter;
+import vswe.stevesfactory.network.IPacketBlock;
+import vswe.stevesfactory.network.PacketHandler;
 
 
 public class TileEntityCamouflage extends TileEntityClusterElement implements IPacketBlock {

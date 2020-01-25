@@ -1,6 +1,11 @@
 package vswe.stevesfactory.blocks;
 
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.Iterator;
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
@@ -11,12 +16,11 @@ import net.minecraftforge.common.util.ForgeDirection;
 import vswe.stevesfactory.components.ComponentMenuPulse;
 import vswe.stevesfactory.components.ComponentMenuRedstoneOutput;
 import vswe.stevesfactory.components.ComponentMenuRedstoneSidesEmitter;
-import vswe.stevesfactory.network.*;
-
-import java.util.ArrayList;
-import java.util.EnumSet;
-import java.util.Iterator;
-import java.util.List;
+import vswe.stevesfactory.network.DataBitHelper;
+import vswe.stevesfactory.network.DataReader;
+import vswe.stevesfactory.network.DataWriter;
+import vswe.stevesfactory.network.IPacketBlock;
+import vswe.stevesfactory.network.PacketHandler;
 
 public class TileEntityOutput extends TileEntityClusterElement implements IPacketBlock, IRedstoneNode {
 

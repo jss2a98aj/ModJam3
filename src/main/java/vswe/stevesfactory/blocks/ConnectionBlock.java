@@ -1,5 +1,7 @@
 package vswe.stevesfactory.blocks;
 
+import java.util.EnumSet;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiScreen;
@@ -9,8 +11,6 @@ import vswe.stevesfactory.components.ComponentMenuContainer;
 import vswe.stevesfactory.components.IContainerSelection;
 import vswe.stevesfactory.components.Variable;
 import vswe.stevesfactory.interfaces.GuiManager;
-
-import java.util.EnumSet;
 
 public class ConnectionBlock implements IContainerSelection {
 

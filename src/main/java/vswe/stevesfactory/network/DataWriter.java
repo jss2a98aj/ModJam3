@@ -1,6 +1,13 @@
 package vswe.stevesfactory.network;
 
 
+import static vswe.stevesfactory.StevesFactoryManager.CHANNEL;
+import static vswe.stevesfactory.StevesFactoryManager.packetHandler;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+
 import cpw.mods.fml.common.network.NetworkRegistry.TargetPoint;
 import cpw.mods.fml.common.network.internal.FMLProxyPacket;
 import io.netty.buffer.ByteBuf;
@@ -13,13 +20,6 @@ import net.minecraft.nbt.NBTTagCompound;
 import vswe.stevesfactory.blocks.TileEntityManager;
 import vswe.stevesfactory.interfaces.ContainerBase;
 import vswe.stevesfactory.settings.Settings;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-
-import static vswe.stevesfactory.StevesFactoryManager.CHANNEL;
-import static vswe.stevesfactory.StevesFactoryManager.packetHandler;
 
 public class DataWriter {
     private int byteBuffer;

@@ -1,13 +1,13 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.EnumSet;
+import java.util.List;
+
 import net.minecraftforge.common.util.ForgeDirection;
 import vswe.stevesfactory.blocks.ConnectionBlockType;
 import vswe.stevesfactory.blocks.IRedstoneNode;
 import vswe.stevesfactory.blocks.ITriggerNode;
-
-import java.util.EnumSet;
-import java.util.List;
 
 public abstract class TriggerHelper {
     public static final int TRIGGER_INTERVAL_ID = 2;

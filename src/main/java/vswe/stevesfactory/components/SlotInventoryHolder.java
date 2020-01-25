@@ -1,13 +1,19 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 import net.minecraft.inventory.IInventory;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fluids.IFluidHandler;
-import vswe.stevesfactory.blocks.*;
-
-import java.util.HashMap;
-import java.util.Map;
+import vswe.stevesfactory.blocks.IRedstoneNode;
+import vswe.stevesfactory.blocks.ITriggerNode;
+import vswe.stevesfactory.blocks.TileEntityBUD;
+import vswe.stevesfactory.blocks.TileEntityCamouflage;
+import vswe.stevesfactory.blocks.TileEntityInput;
+import vswe.stevesfactory.blocks.TileEntityOutput;
+import vswe.stevesfactory.blocks.TileEntitySignUpdater;
 
 public class SlotInventoryHolder {
     private TileEntity inventory;

@@ -1,5 +1,11 @@
 package vswe.stevesfactory.blocks;
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiScreen;
@@ -10,14 +16,35 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import vswe.stevesfactory.Localization;
-import vswe.stevesfactory.components.*;
+import vswe.stevesfactory.components.CommandExecutor;
+import vswe.stevesfactory.components.ComponentMenu;
+import vswe.stevesfactory.components.ComponentMenuContainer;
+import vswe.stevesfactory.components.ComponentMenuCraftingPriority;
+import vswe.stevesfactory.components.ComponentMenuGroup;
+import vswe.stevesfactory.components.ComponentMenuInterval;
+import vswe.stevesfactory.components.ComponentMenuStuff;
+import vswe.stevesfactory.components.ComponentMenuTarget;
+import vswe.stevesfactory.components.ComponentMenuVariable;
+import vswe.stevesfactory.components.ComponentType;
+import vswe.stevesfactory.components.Connection;
+import vswe.stevesfactory.components.ConnectionOption;
+import vswe.stevesfactory.components.ConnectionSet;
+import vswe.stevesfactory.components.FlowComponent;
+import vswe.stevesfactory.components.Point;
+import vswe.stevesfactory.components.TriggerHelper;
+import vswe.stevesfactory.components.TriggerHelperBUD;
+import vswe.stevesfactory.components.TriggerHelperRedstone;
+import vswe.stevesfactory.components.Variable;
+import vswe.stevesfactory.components.VariableColor;
 import vswe.stevesfactory.interfaces.ContainerManager;
 import vswe.stevesfactory.interfaces.GuiManager;
 import vswe.stevesfactory.interfaces.IInterfaceRenderer;
-import vswe.stevesfactory.network.*;
+import vswe.stevesfactory.network.DataBitHelper;
+import vswe.stevesfactory.network.DataReader;
+import vswe.stevesfactory.network.DataWriter;
+import vswe.stevesfactory.network.IComponentNetworkReader;
+import vswe.stevesfactory.network.PacketHandler;
 import vswe.stevesfactory.settings.Settings;
-
-import java.util.*;
 
 
 public class TileEntityManager extends TileEntity implements ITileEntityInterface {

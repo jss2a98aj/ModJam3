@@ -1,25 +1,25 @@
 package vswe.stevesfactory.interfaces;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
+import org.lwjgl.opengl.GL11;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
-import org.lwjgl.input.Keyboard;
-import org.lwjgl.input.Mouse;
-import org.lwjgl.opengl.GL11;
 import vswe.stevesfactory.CollisionHelper;
 import vswe.stevesfactory.Localization;
-import vswe.stevesfactory.StevesFactoryManager;
 import vswe.stevesfactory.animation.AnimationController;
 import vswe.stevesfactory.blocks.TileEntityManager;
 import vswe.stevesfactory.components.FlowComponent;
 import vswe.stevesfactory.network.DataBitHelper;
 import vswe.stevesfactory.network.DataWriter;
 import vswe.stevesfactory.network.PacketHandler;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 @SideOnly(Side.CLIENT)

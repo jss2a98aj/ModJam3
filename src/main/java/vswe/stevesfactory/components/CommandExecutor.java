@@ -1,6 +1,14 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
@@ -14,8 +22,6 @@ import vswe.stevesfactory.blocks.ConnectionBlock;
 import vswe.stevesfactory.blocks.ConnectionBlockType;
 import vswe.stevesfactory.blocks.TileEntityCreative;
 import vswe.stevesfactory.blocks.TileEntityManager;
-
-import java.util.*;
 
 public class CommandExecutor {
 

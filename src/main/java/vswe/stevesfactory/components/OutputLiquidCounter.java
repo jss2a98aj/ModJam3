@@ -1,10 +1,10 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.List;
+
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
-
-import java.util.List;
 
 public class OutputLiquidCounter {
     private Setting setting;

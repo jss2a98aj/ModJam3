@@ -1,9 +1,9 @@
 package vswe.stevesfactory.components;
 
+import java.util.EnumSet;
+
 import vswe.stevesfactory.Localization;
 import vswe.stevesfactory.blocks.ConnectionBlockType;
-
-import java.util.EnumSet;
 
 
 public class ComponentMenuVariableContainers extends ComponentMenuContainer {

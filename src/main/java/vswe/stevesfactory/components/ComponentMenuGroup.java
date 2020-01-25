@@ -1,5 +1,8 @@
 package vswe.stevesfactory.components;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.nbt.NBTTagCompound;
 import vswe.stevesfactory.CollisionHelper;
@@ -9,9 +12,6 @@ import vswe.stevesfactory.interfaces.GuiManager;
 import vswe.stevesfactory.network.DataReader;
 import vswe.stevesfactory.network.DataWriter;
 import vswe.stevesfactory.network.PacketHandler;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class ComponentMenuGroup extends ComponentMenu {

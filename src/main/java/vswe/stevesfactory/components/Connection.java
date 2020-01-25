@@ -1,12 +1,12 @@
 package vswe.stevesfactory.components;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiScreen;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Connection {
     private int componentId;

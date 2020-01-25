@@ -1,5 +1,8 @@
 package vswe.stevesfactory.settings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
@@ -11,9 +14,6 @@ import vswe.stevesfactory.components.CheckBoxList;
 import vswe.stevesfactory.components.ComponentType;
 import vswe.stevesfactory.interfaces.GuiManager;
 import vswe.stevesfactory.interfaces.IInterfaceRenderer;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @SideOnly(Side.CLIENT)
 public class SettingsScreen implements IInterfaceRenderer {

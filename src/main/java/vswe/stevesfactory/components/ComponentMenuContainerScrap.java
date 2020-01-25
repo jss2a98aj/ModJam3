@@ -1,12 +1,12 @@
 package vswe.stevesfactory.components;
 
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import vswe.stevesfactory.Localization;
 import vswe.stevesfactory.blocks.ConnectionBlockType;
 import vswe.stevesfactory.interfaces.GuiManager;
-
-import java.util.List;
 
 
 public class ComponentMenuContainerScrap extends ComponentMenuContainer {

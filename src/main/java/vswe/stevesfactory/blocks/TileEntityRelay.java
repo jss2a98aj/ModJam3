@@ -1,5 +1,9 @@
 package vswe.stevesfactory.blocks;
 
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiScreen;
@@ -16,7 +20,6 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.StringUtils;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.Fluid;
@@ -33,10 +36,6 @@ import vswe.stevesfactory.util.Utils;
 import vswe.stevesfactory.wrappers.InventoryWrapper;
 import vswe.stevesfactory.wrappers.InventoryWrapperHorse;
 import vswe.stevesfactory.wrappers.InventoryWrapperPlayer;
-
-import java.util.ArrayList;
-import java.util.EnumSet;
-import java.util.List;
 
 
 public class TileEntityRelay extends TileEntityClusterElement implements IInventory, ISidedInventory, IFluidHandler, ITileEntityInterface {

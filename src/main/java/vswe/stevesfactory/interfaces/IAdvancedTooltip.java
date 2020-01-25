@@ -1,10 +1,10 @@
 package vswe.stevesfactory.interfaces;
 
 
+import java.util.List;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-
-import java.util.List;
 
 
 public interface IAdvancedTooltip {

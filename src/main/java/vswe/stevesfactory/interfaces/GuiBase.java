@@ -1,6 +1,13 @@
 package vswe.stevesfactory.interfaces;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.lwjgl.opengl.GL11;
+import org.lwjgl.opengl.GL12;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -19,16 +26,9 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL12;
 import vswe.stevesfactory.StevesFactoryManager;
 import vswe.stevesfactory.blocks.TileEntityClusterElement;
 import vswe.stevesfactory.settings.Settings;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
 
 @SideOnly(Side.CLIENT)
 public abstract class GuiBase extends GuiAntiNEI {

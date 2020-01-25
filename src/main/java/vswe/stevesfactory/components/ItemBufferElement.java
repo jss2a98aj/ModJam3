@@ -1,11 +1,11 @@
 package vswe.stevesfactory.components;
 
 
-import net.minecraft.item.ItemStack;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import net.minecraft.item.ItemStack;
 
 public class ItemBufferElement implements IItemBufferElement {
     private ItemSetting setting;

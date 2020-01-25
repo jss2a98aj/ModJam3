@@ -1,11 +1,11 @@
 package vswe.stevesfactory.blocks;
 
+import java.util.EnumSet;
+
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntitySign;
 import net.minecraftforge.common.util.ForgeDirection;
 import vswe.stevesfactory.components.ComponentMenuSignText;
-
-import java.util.EnumSet;
 
 
 public class TileEntitySignUpdater extends TileEntityClusterElement {
